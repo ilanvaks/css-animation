@@ -1,0 +1,91 @@
+.navbar {
+  background-color: aqua;
+}
+.box  {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  transition: 0.5s ease-in-out;
+  cursor: crosshair;
+}
+.scale:hover {
+  transform: scale(1.3);
+}
+.scale-x:hover {
+  transform: scaleX(1.3);
+}
+.scale-y:hover {
+  transform: scaleY(1.3);
+}
+.scale-z:hover {
+  transform: scaleZ(1.3);
+}
+.rotate:hover {
+  transform: rotate(18000000deg)
+}
+.skew:hover {
+  transform: skew(45deg)
+}
+.skew2:hover {
+  transform: skew(45deg, -60deg)
+}
+.translate:hover {
+  transform: translate(5px, 12px);
+}
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(30, 48, 186);
+  transition: 0.5s ease-in-out;
+  cursor: crosshair;
+  animation-name: bgcolorAnimate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes bgcolorAnimate {
+  from { background-color: rgb(51, 255, 0);}
+  to { background-color: rgb(255, 0, 238);}
+}
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(30, 48, 186);
+  transition: 0.5s ease-in-out;
+  cursor: crosshair;
+  animation-name: bgcolorAnimate2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes bgcolorAnimate2 {
+  0% { background-color: red}
+  25% { background-color: yellow;}
+  50%{background-color: green; transform:scale(1.5)}
+  75%{background-color: blue; transform: rotate(1080deg);}
+  100%{background-color: purple;}
+}
+.boxrace {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(30, 186, 35);
+  position: relative;
+  animation: boxraceAnimate 5s infinite;
+}
+.race1 {
+  animation-timing-function: linear;
+}
+.race2 {
+  animation-timing-function: ease;
+}
+.race3 {
+  animation-timing-function: ease-in;
+}
+.race4 {
+  animation-timing-function: ease-out;
+}
+.race5 {
+  animation-timing-function: ease-in-out;
+}
+@keyframes boxraceAnimate {
+  from { left: 0px; }
+  to {left: 300px;}
+}
