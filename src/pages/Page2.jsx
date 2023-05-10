@@ -9,9 +9,9 @@ export default function Page2 () {
     <section>
       <Container>
         <Row>
-          <Col><button class="pg2-button button1">X axis</button></Col>
-          <Col><button class="pg2-button button2">Y axis</button></Col>
-          <Col><button class="pg2-button button3">Scale</button></Col>
+          <Col><button className="pg2-button button1">X axis</button></Col>
+          <Col><button className="pg2-button button2">Y axis</button></Col>
+          <Col><button className="pg2-button button3">Scale</button></Col>
           
         </Row>
         <Row>
